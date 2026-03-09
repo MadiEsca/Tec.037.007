@@ -1,0 +1,23 @@
+<script>
+    //Criando os objetos que serão utilizados
+    let produto = { //Objeto produto
+        id: 1,
+        descricao: "Mouse",
+        preco: 245.99,
+        estoque: 20
+    }
+
+    let cliente = { //Objeto cliente
+        nome: "Luiza",
+        descricao: "Cliente de alto padrão"
+    }
+
+    //Acessando os valores dos usuários
+    alert(`- Descrição produto: ${produto.descricao} \n- Descrição cliente: ${cliente.descricao}`)
+    const { nome: nomeProduto, descricao: descricaoProduto } = produto //Desestruturando nosso objeto produto | Renomeando campos
+    const { nome: nomeCliente, descricao: descricaoCliente } = cliente //Desestruturando nosso objeto cliente | Renomeando campos
+
+    alert(descricaoProduto)
+    alert(descricaoCliente)
+
+</script>
