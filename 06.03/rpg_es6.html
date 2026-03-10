@@ -75,7 +75,7 @@
     1 - Golpe simples | 2 - Barbie 2000 | 3 - Dreamhouse adventure | 4 - O ken me ama - poção
     `
 
-    do {
+    while (heroi.hp > 0 && boss.hp > 0){
         alert(`***STATUS***\nBoss: ${boss.hp} | Hero: ${heroi.hp}`)
         
         if (heroi.hp > 0) {
@@ -86,7 +86,7 @@
             console.log(`Nome do heroi: ${heroiNome}\nVida do heroi: ${heroiHp}\nMana do heroi: ${heroiMp}\nPoções do herói: ${heroiPocoes}\nEnergia do heroi: ${heroiEnergia}
             `)
         } else {
-            alert(`Você perdeu! ${boss.nome} te matou :(`)
+            alert(`Você perdeu! ${boss.nome} te matou :(`);
         }
 
         if (boss.hp > 0) {
@@ -101,8 +101,7 @@
         } else{
             alert(`O heroi ${heroi.nome} ganhou :0!! Parabéns :)`)
         }
-
-    } while (heroi.hp > 0 && boss.hp > 0);
+    }
 
     /*
         atacar - Ataque do heroi ou do boss
@@ -114,7 +113,7 @@
    /*PRECISA SER FEITO
     - Validação de campos
     - Botão de saída
-    - Implementar visualmente
+    - Implementar interface gráfica
    */
   
 </script>
